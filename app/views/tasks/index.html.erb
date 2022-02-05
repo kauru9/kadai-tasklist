@@ -1,5 +1,4 @@
-<% if logged_in? %>
- <p>ログイン完了ユーザ: <%= current_user.name %></p>
+<p>ログイン完了ユーザ: <%= current_user.name %></p>
  <h1>タスク一覧</h1>
 
   <ul>
@@ -10,6 +9,3 @@
 
  <%= link_to '新規タスクの投稿', new_task_path %>
 
-<% else %>
-  <%= link_to 'Sign up now!', signup_path, class: 'btn btn-lg btn-primary' %>
-<% end %>
